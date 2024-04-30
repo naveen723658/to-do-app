@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="header">
+        <h1>To - do List</h1>
+      </div>
+      <form class="inputContainer" id="form">
+        <input type="text" name="task" id="task" placeholder="Add a new task" />
+        <input type="time" name="time" id="time" />
+        <button type="submit" id="add">Add</button>
+      </form>
+      <div class="listContainer">
+        <table class="innerContainer">
+          <thead class="tableHeader">
+            <tr>
+              <th>Task</th>
+              <th>Time</th>
+              <th>Action</th>
+              <th class="filter">
+                <p></p>
+                <p></p>
+                <p></p>
+                <div class="filterbtn">
+                  <h3>Filter</h3>
+                  <div class="filterOptions">
+                    <button onclick="filter('all')" id="all">All</button>
+                    <button onclick="filter('completed')" id="completed">
+                      Completed
+                    </button>
+                    <button onclick="filter('pending')" id="pending">
+                      Pending
+                    </button>
+                    <button class="deleteALL">Delete All</button>
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+        </table>
+        <div class="tableBody">
+          <table>
+            <tbody id="list">
+              <!-- <tr>
+                <td>Task 1</td>
+                <td>12:00</td>
+                <td>
+                  <button class="done">Done</button>
+                  <button class="delete">Delete</button>
+                </td>
+              </tr> -->
+              <div id="noData" class="noData">
+                <h2>No Task Added !</h2>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./styles/script.js"></script>
+  </body>
+</html>
