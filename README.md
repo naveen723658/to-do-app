@@ -29,7 +29,7 @@ features, it empowers users to enhance productivity and organization. As
 development progresses, it is poised to become an essential tool for
 optimizing time and accomplishing goals effectively.
 
-#### Preview url: https://weather.knaveen.me/
+#### Preview url: https://todoapp.knaveen.me/
 
 
 
